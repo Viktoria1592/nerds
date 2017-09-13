@@ -130,7 +130,7 @@ header h1 {
     padding-left: 30px;
 }
 
-.user-block a {
+.bracket {
     text-decoration: none;
     text-transform: uppercase;
     color: #000000;
@@ -142,7 +142,7 @@ header h1 {
     transition: color 0.3s;
 }
 
-.user-block a::before {
+.bracket::before {
     content: "";
     position: absolute;
     width: 15px;
@@ -156,12 +156,12 @@ header h1 {
     transition: opacity 0.3s;
 }
 
-.user-block a:hover::before {
+.bracket:hover::before {
     opacity: 1;
     background-position: -25px -90px;
 }
 
-.user-block a:active::before {
+.bracket:active::before {
     opacity: 0.15;
     background-position: -25px -25px;
 }
@@ -213,8 +213,8 @@ header h1 {
     opacity: 0;
     z-index: 0;
     -webkit-transform: scale(0.8);
-        -ms-transform: scale(0.8);
-            transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
     -webkit-transition: opacity ease-in-out 0.5s, -webkit-transform ease-in-out 0.7s;
     transition: opacity ease-in-out 0.5s, -webkit-transform ease-in-out 0.7s;
     -o-transition: transform ease-in-out 0.7s, opacity ease-in-out 0.5s;
@@ -237,7 +237,7 @@ header h1 {
     position: relative;
     width: 5px;
     -webkit-border-radius: 50%;
-            border-radius: 50%;
+    border-radius: 50%;
     background-color: #ffffff;
     border: 4px solid #ffffff;
     -webkit-transition: background-color 0.5s;
@@ -258,8 +258,8 @@ header h1 {
     opacity: 1;
     z-index: 1;
     -webkit-transform: scale(1);
-        -ms-transform: scale(1);
-            transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
 }
 
 .btn {
@@ -270,7 +270,7 @@ header h1 {
     font-size: 12px;
     line-height: 18px;
     -webkit-border-radius: 3px;
-            border-radius: 3px;
+    border-radius: 3px;
     padding-top: 10px;
     padding-bottom: 10px;
     display: inline-block;
@@ -324,7 +324,7 @@ header h1 {
 .btn-page:active {
     background-color: #d5d5d5;
     -webkit-box-shadow: 0px 3px 0px 0px rgba(192, 192, 192, 0.15) inset;
-            box-shadow: 0px 3px 0px 0px rgba(192, 192, 192, 0.15) inset;
+    box-shadow: 0px 3px 0px 0px rgba(192, 192, 192, 0.15) inset;
 }
 
 .btn-next {
@@ -385,7 +385,7 @@ header h1 {
     padding: 8px 13px;
     cursor: default;
     -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
 }
 
 .main-content {
@@ -556,7 +556,7 @@ header h1 {
 #map {
     background: url(../img/map.jpg) no-repeat;
     -webkit-background-size: cover;
-            background-size: cover;
+    background-size: cover;
     width: 100%;
     height: 416px;
 }
@@ -587,7 +587,7 @@ header h1 {
     width: 60px;
     height: 60px;
     -webkit-border-radius: 50%;
-            border-radius: 50%;
+    border-radius: 50%;
     background: url(../img/spritesheet.png) no-repeat #e1e1e1;
     margin-right: 30px;
     -webkit-transition: 0.4s;
@@ -606,7 +606,7 @@ header h1 {
 .social:active {
     background-color: #d6494d;
     -webkit-box-shadow: inset 0px 3px 0px 0px rgba(0, 0, 0, 0.15);
-            box-shadow: inset 0px 3px 0px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0px 3px 0px 0px rgba(0, 0, 0, 0.15);
 }
 
 .social-vk {
@@ -879,8 +879,10 @@ fieldset legend {
 .filter-items-left span {
     position: relative;
 }
+
 .layout-type span::before,
-.components span::before {content: "";
+.components span::before {
+    content: "";
     position: absolute;
     display: block;
     width: 18px;
@@ -889,7 +891,8 @@ fieldset legend {
     top: 0;
     left: 0px;
     -webkit-border-radius: 5px;
-            border-radius: 5px;}
+    border-radius: 5px;
+}
 
 .filter-items-left label {
     padding-left: 30px;
@@ -898,7 +901,7 @@ fieldset legend {
 
 .layout-type span::before {
     -webkit-border-radius: 50%;
-            border-radius: 50%;
+    border-radius: 50%;
 }
 
 .filter-items-left label::before {
@@ -915,11 +918,15 @@ fieldset legend {
     width: 200px;
     background-color: #f1f1f1;
     -webkit-border-radius: 5px;
-            border-radius: 5px;
+    border-radius: 5px;
     padding: 40px 20px;
     margin-bottom: 15px;
 }
-.output-area {font-size: 0;}
+
+.output-area {
+    font-size: 0;
+}
+
 .output-area label {
     font-size: 16px;
     line-height: 22px;
@@ -934,7 +941,7 @@ fieldset legend {
     text-align: center;
     display: inline-block;
     -webkit-border-radius: 5px;
-            border-radius: 5px;
+    border-radius: 5px;
     padding: 0;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -946,7 +953,10 @@ fieldset legend {
     font-family: "RobotoMedium", sans-serif, "Arial";
     color: #000000;
 }
-.output-area input:last-of-type {margin-right: 0px;}
+
+.output-area input:last-of-type {
+    margin-right: 0px;
+}
 
 #rating {
     width: 200px;
@@ -965,7 +975,7 @@ fieldset legend {
 .ui-slider .ui-slider-handle {
     position: absolute;
     -webkit-border-radius: 50%;
-            border-radius: 50%;
+    border-radius: 50%;
     z-index: 2;
     width: 4px;
     height: 4px;
@@ -973,7 +983,7 @@ fieldset legend {
     background-color: #ababab;
     cursor: pointer;
     -webkit-box-shadow: 0px 2px 0px 0px rgba(0, 1, 0, 0.14);
-            box-shadow: 0px 2px 0px 0px rgba(0, 1, 0, 0.14); 
+    box-shadow: 0px 2px 0px 0px rgba(0, 1, 0, 0.14);
 }
 
 .ui-slider .ui-slider-range {
@@ -996,10 +1006,10 @@ fieldset legend {
     top: -5px;
     margin-left: -6px;
 }
+
 .ui-slider-horizontal .ui-slider-handle:focus {
     outline: none;
 }
-
 
 .ui-slider-horizontal .ui-slider-range {
     top: 0;
@@ -1043,8 +1053,8 @@ fieldset legend {
     border-left: 3px solid #d6d6d6;
     border-bottom: 3px solid #d6d6d6;
     -webkit-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
     top: 2px;
     left: 5px;
 }
@@ -1059,7 +1069,7 @@ fieldset legend {
     height: 10px;
     background-color: #d6d6d6;
     -webkit-border-radius: 50%;
-            border-radius: 50%;
+    border-radius: 50%;
     top: 6px;
     left: 6px;
 }
@@ -1076,12 +1086,12 @@ fieldset legend {
     padding: 50px 80px 48px 90px;
     position: fixed;
     -webkit-box-shadow: 0px 20px 40px 0px rgba(0, 1, 1, 0.75);
-            box-shadow: 0px 20px 40px 0px rgba(0, 1, 1, 0.75);
+    box-shadow: 0px 20px 40px 0px rgba(0, 1, 1, 0.75);
     opacity: 0;
     z-index: 20;
     -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     left: 50%;
     top: 50%;
     pointer-events: none;
@@ -1151,12 +1161,12 @@ fieldset legend {
     opacity: 1;
     pointer-events: all;
     -webkit-animation: appearing 0.5s;
-            animation: appearing 0.5s;
+    animation: appearing 0.5s;
 }
 
 .pop-up-error {
     -webkit-animation: bounce 0.4s;
-            animation: bounce 0.4s;
+    animation: bounce 0.4s;
 }
 
 .pop-up label {
@@ -1175,7 +1185,7 @@ fieldset legend {
     width: 441px;
     border: 2px solid #d7dcde;
     -webkit-border-radius: 3px;
-            border-radius: 3px;
+    border-radius: 3px;
     padding-left: 15px;
     padding-top: 8px;
     vertical-align: top;
@@ -1201,28 +1211,48 @@ fieldset legend {
     padding-bottom: 8px;
 }
 
-.pop-up input::-webkit-input-placeholder,
+.pop-up input::-webkit-input-placeholder {
+    text-transform: uppercase;
+    opacity: 1;
+    color: #000000;
+}
+
 .pop-up textarea::-webkit-input-placeholder {
     text-transform: uppercase;
     opacity: 1;
     color: #000000;
 }
 
-.pop-up input::-moz-placeholder,
+.pop-up input::-moz-placeholder {
+    text-transform: uppercase;
+    opacity: 1;
+    color: #000000;
+}
+
 .pop-up textarea::-moz-placeholder {
     text-transform: uppercase;
     opacity: 1;
     color: #000000;
 }
 
-.pop-up input:-ms-input-placeholder,
+.pop-up input:-ms-input-placeholder {
+    text-transform: uppercase;
+    opacity: 1;
+    color: #000000;
+}
+
 .pop-up textarea:-ms-input-placeholder {
     text-transform: uppercase;
     opacity: 1;
     color: #000000;
 }
 
-.pop-up input::placeholder,
+.pop-up input::placeholder {
+    text-transform: uppercase;
+    opacity: 1;
+    color: #000000;
+}
+
 .pop-up textarea::placeholder {
     text-transform: uppercase;
     opacity: 1;
@@ -1253,7 +1283,7 @@ fieldset legend {
     right: 5px;
     background-color: #fb565a;
     -webkit-border-radius: 50%;
-            border-radius: 50%;
+    border-radius: 50%;
 }
 
 .modal-close::after,
@@ -1263,7 +1293,7 @@ fieldset legend {
     width: 25px;
     height: 5px;
     -webkit-border-radius: 1px;
-            border-radius: 1px;
+    border-radius: 1px;
     background-color: #ffffff;
     top: 16px;
     left: 7px;
@@ -1271,14 +1301,14 @@ fieldset legend {
 
 .modal-close::after {
     -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-            transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 .modal-close::before {
     -webkit-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
 }
 
 .modal-overlay {
